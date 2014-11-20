@@ -1,0 +1,62 @@
+CodeBook for aggregated data from the Samsung Galaxy data set [1] which shows meausements for different acitivities produced by 30 different subjects.
+==================================================================
+
+Experiment description and pre-processing
+==================================================================
+
+The experiment was performed on 30 different subjects between the age of 19 and 48, where 6 different tasks were completed.
+
+The Samsung Galaxy S3 measurements (accelerometer and gyroscope) were pre-processed as descirbed in [1].
+
+========================================================================
+For each record it is provided:
+========================================================================
+
+- A 90 feature vector which included 88 features which are based on the aggregated results from all data measurements in the orginal data set from the Samsung Galaxy S3 experiment. These data are aggreagated by both activity type and subject.
+- The last two features are the activity name, and a subject identifier.
+- Features are normalised to the range [-1,1].
+
+=========================================================================
+Files included:
+=========================================================================
+- AggregateData.txt
+
+=========================================================================
+Description of measurement features:
+=========================================
+
+17 different types of features are provided. Here 'XYZ' is used to indicate axial position, and each features will only include on of 'X', 'Y' or 'Z'.
+The initial character for each features (t or f) indicates whether the measurement is a time or frequency measure.
+Lastly the abbreviations 'Acc' and 'Gyro' are used to indicate whether the measurment was made by the accelerometer or the gyroscope.
+
+-tBodyAcc-XYZ
+-tGravityAcc-XYZ
+-tBodyAccJerk-XYZ
+-tBodyGyro-XYZ
+-tBodyGyroJerk-XYZ
+-tBodyAccMag
+-tGravityAccMag
+-tBodyAccJerkMag
+-tBodyGyroMag
+-tBodyGyroJerkMag
+-fBodyAcc-XYZ
+-fBodyAccJerk-XYZ
+-fBodyGyro-XYZ
+-fBodyAccMag
+-fBodyAccJerkMag
+-fBodyGyroMag
+-fBodyGyroJerkMag
+
+There are two different types of measurements demonstrated here:
+-Mean: which indicates the mean of all measurements made.
+-STD: which indicates the standard deviation of all measurements made.
+
+====================================================================================
+References:
+====================================================================================
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
